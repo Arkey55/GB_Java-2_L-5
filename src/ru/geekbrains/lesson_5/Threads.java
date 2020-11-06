@@ -12,7 +12,7 @@ public class Threads implements Runnable {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (float)(arr[i] * Math.sin(0.2f + i / 5f) * Math.cos(0.2f + i / 5f) * Math.cos(0.4f + i / 2f));
         }
-        System.out.println("Time to fill array by thread (" + Thread.currentThread().getName() + ") is " + (System.currentTimeMillis() - a) + " ms");
+        System.out.println("Time to fill array by (" + Thread.currentThread().getName() + ") is " + (System.currentTimeMillis() - a) + " ms");
         return arr;
     }
 

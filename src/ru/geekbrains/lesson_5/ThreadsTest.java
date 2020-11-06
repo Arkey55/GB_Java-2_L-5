@@ -6,7 +6,6 @@ public class ThreadsTest{
     private static final int size = 10000000;
     private static final int h = size / 2;
     private float[] arr = new float[size];
-    private Object lock1 = new Object();
 
     public void fillArray (){
         long a = System.currentTimeMillis();
